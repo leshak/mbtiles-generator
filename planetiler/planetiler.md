@@ -34,7 +34,7 @@ java -Xmx4g \
 
 ### Planet if VM RAM > 140GB
 ```
-java -Xmx120g \
+java -Xmx130g \
   -XX:MaxHeapFreeRatio=40 \
   -jar planetiler-openmaptiles.jar \
   --area=planet --bounds=planet --download \
