@@ -36,6 +36,8 @@ java -Xmx20g \
   -jar planetiler.jar \
   --area=planet --bounds=planet --download \
   --download-threads=10 --download-chunk-size-mb=1000 \
+  --fetch-wikidata \
+  --languages=ru,en
   --output=planet.mbtiles \
   --nodemap-type=array --storage=mmap
 ```
