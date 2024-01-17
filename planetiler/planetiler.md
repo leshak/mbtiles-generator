@@ -39,7 +39,7 @@ java -Xmx120g \
   --download-threads=10 --download-chunk-size-mb=1000 \
   --fetch-wikidata \
   --languages=ru,en \
-  --output=output.mbtiles \
+  --output=planet.mbtiles \
   --nodemap-type=array --storage=ram
   ```
 
