@@ -13,4 +13,4 @@
 [Readme](https://github.com/leshak/tilemaker-template/blob/master/tilemaker/tilemaker.md)
 
 # Planetiler
-[Readme]()
+[Readme](https://github.com/leshak/mbtiles-generator/blob/master/planetiler/planetiler.md)
