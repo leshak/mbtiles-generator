@@ -1,7 +1,7 @@
 # Planetiler
 https://github.com/onthegomap/planetiler
 
-## Install Java 21 jre
+## Install Java 21 jre (ubuntu 22.x)
 ```
 sudo apt-get update && sudo apt-get install -y openjdk-21-jre-headless screen
 ```
@@ -26,18 +26,16 @@ java -Xmx4g \
   -jar planetiler.jar \
   --area=russia --download \
   --download-threads=10 --download-chunk-size-mb=1000 \
-  --output=output.mbtiles \
-  --nodemap-type=array --storage=ram
+  --output=output.mbtiles
 ```
 
 
-### Planet if RAM > 1.5 x 
+### Planet -f VM RAM < 120GB
 ```
-java -Xmx8g \
-  -XX:MaxHeapFreeRatio=40 \
+java -Xmx20g \
   -jar planetiler.jar \
   --area=planet --bounds=planet --download \
   --download-threads=10 --download-chunk-size-mb=1000 \
-  --output=output.mbtiles \
-  --nodemap-type=array --storage=ram
+  --output=planet.mbtiles \
+  --nodemap-type=array --storage=mmap
 ```
