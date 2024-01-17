@@ -30,14 +30,28 @@ java -Xmx4g \
 ```
 
 
-### Planet if VM RAM < 120GB
+### Planet if VM RAM > 140GB
+```
+java -Xmx120g \
+  -XX:MaxHeapFreeRatio=40 \
+  -jar planetiler.jar \
+  --area=planet --bounds=planet --download \
+  --download-threads=10 --download-chunk-size-mb=1000 \
+  --fetch-wikidata \
+  --languages=ru,en \
+  --output=output.mbtiles \
+  --nodemap-type=array --storage=ram
+  ```
+
+
+### Planet if VM RAM < 64GB
 ```
 java -Xmx20g \
   -jar planetiler.jar \
   --area=planet --bounds=planet --download \
   --download-threads=10 --download-chunk-size-mb=1000 \
   --fetch-wikidata \
-  --languages=ru,en
+  --languages=ru,en \
   --output=planet.mbtiles \
   --nodemap-type=array --storage=mmap
 ```
