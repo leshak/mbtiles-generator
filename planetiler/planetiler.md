@@ -30,7 +30,7 @@ java -Xmx4g \
 ```
 
 
-### Planet -f VM RAM < 120GB
+### Planet if VM RAM < 120GB
 ```
 java -Xmx20g \
   -jar planetiler.jar \
