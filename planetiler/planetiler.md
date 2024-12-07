@@ -47,7 +47,7 @@ java -Xmx140g \
 
 ### Planet if VM RAM < 64GB
 ```
-java -Xmx20g \
+java -Xmx25g \
   -jar planetiler-openmaptiles.jar \
   --area=planet --bounds=planet --download \
   --download-threads=10 --download-chunk-size-mb=1000 \
